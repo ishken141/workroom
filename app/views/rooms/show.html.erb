@@ -1,0 +1,17 @@
+<div class="text-center"> 
+ <h1 id="title">STUDIO3</h1>
+    <div class="container">
+    <p id="timer">03:00:00</p>
+    <div class="button" id="buttonBox">
+  <button id="start"
+        class="btn btn-lg btn-primary">START</button>
+    </div>  
+   <%= render partial: "timers/timer" %>  
+<div id="messages">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  COMMUNICATION
+</button>
+</div>  
+   <%= render @messages %>
+ </div> 　
+</div>

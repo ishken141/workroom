@@ -1,0 +1,106 @@
+
+.gs {  
+  color: #fff; 
+  margin-top: 30px;
+}
+
+.text {  
+  opacity: 0; 
+  transform: translateY(10px);
+}
+.container { 
+    text-align: center; 
+    margin: 30px auto; 
+} 
+
+#timer { 
+    font-size: 36px; 
+    border: 1px solid #ccc; 
+    margin: 30px auto; 
+    padding: 50px; 
+    background-color: #000; 
+    color: #fff; 
+    border-radious: 3px; 
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .5); 
+} 
+
+.btn { 
+    width: 100%; 
+} 
+
+h1 {  
+} 
+
+body { 
+    background-image: url("https://images.unsplash.com/photo-1506197061617-7f5c0b093236?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1905&q=80"); 
+} 
+
+#title { 
+    color: #fff;  
+    font-weight: bold; 
+    font-size: 90px; 
+    animation: title 0.3s 0.3s steps(100); 
+} 
+
+h2 { 
+    color: #fff; 
+}  
+#chat-input { 
+    border: 1px solid lightgrey; 
+    
+}  
+
+@keyframes title { 
+  @for $val from 0 through 100 { 
+    @if $val <= 10 { 
+      #{$val}% { 
+        text-shadow: 3px 0 0 #fff, -3px 0 0 #000; 
+      }  
+    }@else if $val <= 20 { 
+      #{$val}% { 
+        text-shadow: 3px 0 0 #fff, 3px 0 0 #000; 
+      }  
+    }@else if $val <= 30 { 
+      #{$val}% { 
+        text-shadow: 0px 0 0 #000, 0px 0 0 #fff; 
+      }    
+    }@else if $val <= 40 { 
+      #{$val}% { 
+        text-shadow: 3px 0 0 #fff, -3px 0 0 #000; 
+      }
+    }@else if $val <= 50 { 
+      #{$val}% { 
+        text-shadow: 50px 0 0 #000, -50px 0 0 #fff;  
+        filter: blur(0.5px); 
+        color: transparent;
+      }
+    }@else if $val <= 60 { 
+      #{$val}% { 
+        text-shadow: -50px 0 0 #fff, 50px 0 0 #000;  
+        filter: blur(0.5px); 
+        color: transparent;
+      }  
+    }@else if $val <= 70 { 
+      #{$val}% { 
+        text-shadow: 3px 0 0 #000, -3px 0 0 #fff;  
+        filter: blur(0.5px); 
+        color: transparent;
+      }    
+    }@else if $val <= 80 { 
+      #{$val}% { 
+        text-shadow: -20px 0 0 #fff, 20px 0 0 #000;  
+        filter: blur(0.5px); 
+        color: transparent;
+      }    
+    }@else if $val <= 90 { 
+      #{$val}% { 
+        text-shadow: 0px 0 0 #000, 0px 0 0 #fff;  
+      }      
+    }@else if $val <= 100 { 
+      #{$val}% { 
+        text-shadow: -30px 0 0 #fff, 30px 0 0 #000;  
+      }  
+    } 
+  } 
+}
+    

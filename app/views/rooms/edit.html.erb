@@ -1,0 +1,36 @@
+<div class="text-center"> 
+ <h1 id="title">UNLIMITED</h1>
+    <div class="container">
+    <p id="timer">00:00:00</p>
+    <div class="button" id="buttonBox">
+  <button id="st"
+        class="btn btn-lg btn-primary">START</button>
+    </div>  
+  <%= render partial: "timers/time" %> 
+  <div class="gs">
+      <div class="inner">
+          <h1 class="text">Stay Hugrey. Stay Foolish.</h1> 
+          <h3 class="text">So keep looking until your find it. Don't settle.</h3>
+          <h3 class="text">Your time is limited, so don't waste it living someone eles's life.</h3> 
+          <h3 class="text">You are already naked. There is no reason not to follow your heart.</h3>
+          <h3 class="text">the only way to be truly satisfied is to do what you belive is great work.</h3>
+          <h3 class="text">And most important, have the courage to follow your heart and intuition.</h3>
+      </div>
+  </div> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script> 
+  <script>
+          gsap.to('.text', { 
+          duration:1,  
+          opacity:1, 
+          y:"0px", 
+          yoyo:true, 
+          repeat:-1,
+          stagger: { 
+              each:0.5, 
+          }
+        })   
+  </script>
+  </div> 
+</div>
+  
+  

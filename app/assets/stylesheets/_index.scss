@@ -1,0 +1,120 @@
+.wrap {  
+  font-size: 100px;
+  width: 100%; 
+  height: 100vh; 
+  display: flex; 
+  align-items: start; 
+  justify-content: center;  
+  color: #fff; 
+  
+  .inner {  
+      margin-top: 200px;
+    span { 
+      font-size: 60px; 
+      color: #fff;  
+      font-weight: bold;
+      animation: glitch 0.3s 0.3s steps(100);  
+      letter-spacing: .1em;
+   } 
+   
+ }  
+}
+
+@keyframes glitch { 
+  @for $val from 0 through 100 { 
+    @if $val <= 10 { 
+      #{$val}% { 
+        text-shadow: 3px 0 0 #ff0, -3px 0 0 #00f; 
+      }  
+    }@else if $val <= 20 { 
+      #{$val}% { 
+        text-shadow: 3px 0 0 #ff0, 3px 0 0 #00f; 
+      }  
+    }@else if $val <= 30 { 
+      #{$val}% { 
+        text-shadow: 0px 0 0 #ff0, 0px 0 0 #f0f; 
+      }    
+    }@else if $val <= 40 { 
+      #{$val}% { 
+        text-shadow: 3px 0 0 #ff0, -3px 0 0 #f0f; 
+      }
+    }@else if $val <= 50 { 
+      #{$val}% { 
+        text-shadow: 50px 0 0 #ff0, -50px 0 0 #f0f;  
+        filter: blur(0.5px); 
+        color: transparent;
+      }
+    }@else if $val <= 60 { 
+      #{$val}% { 
+        text-shadow: -50px 0 0 #ff0, 50px 0 0 #f0f;  
+        filter: blur(0.5px); 
+        color: transparent;
+      }  
+    }@else if $val <= 70 { 
+      #{$val}% { 
+        text-shadow: 3px 0 0 #ff0, -3px 0 0 #00f;  
+        filter: blur(0.5px); 
+        color: transparent;
+      }    
+    }@else if $val <= 80 { 
+      #{$val}% { 
+        text-shadow: -20px 0 0 #ff0, 20px 0 0 #00f;  
+        filter: blur(0.5px); 
+        color: transparent;
+      }    
+    }@else if $val <= 90 { 
+      #{$val}% { 
+        text-shadow: 0px 0 0 #ff0, 0px 0 0 #00f;  
+      }      
+    }@else if $val <= 100 { 
+      #{$val}% { 
+        text-shadow: -30px 0 0 #ff0, 30px 0 0 #00f;  
+      }    
+    }@else if $val <= 110 { 
+      #{$val}% { 
+        text-shadow: 3px 0 0 #ff0, 3px 0 0 #00f; 
+      }  
+    }@else if $val <= 120 { 
+      #{$val}% { 
+        text-shadow: 0px 0 0 #ff0, 0px 0 0 #f0f; 
+      }    
+    }@else if $val <= 130 { 
+      #{$val}% { 
+        text-shadow: 3px 0 0 #ff0, -3px 0 0 #f0f; 
+      }
+    }@else if $val <= 140 { 
+      #{$val}% { 
+        text-shadow: 50px 0 0 #ff0, -50px 0 0 #f0f;  
+        filter: blur(0.5px); 
+        color: transparent;
+      }
+    }@else if $val <= 150 { 
+      #{$val}% { 
+        text-shadow: -50px 0 0 #ff0, 50px 0 0 #f0f;  
+        filter: blur(0.5px); 
+        color: transparent;
+      }  
+    }@else if $val <= 160 { 
+      #{$val}% { 
+        text-shadow: 3px 0 0 #ff0, -3px 0 0 #00f;  
+        filter: blur(0.5px); 
+        color: transparent;
+      }    
+    }@else if $val <= 170 { 
+      #{$val}% { 
+        text-shadow: -20px 0 0 #ff0, 20px 0 0 #00f;  
+        filter: blur(0.5px); 
+        color: transparent;
+      }    
+    }@else if $val <= 180 { 
+      #{$val}% { 
+        text-shadow: 0px 0 0 #ff0, 0px 0 0 #00f;  
+      }      
+    }@else if $val <= 1190 { 
+      #{$val}% { 
+        text-shadow: -30px 0 0 #ff0, 30px 0 0 #00f;      
+      }  
+    } 
+  } 
+}
+    
