@@ -5,8 +5,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %> 
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>   
-    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>  
   </head>
   <body>  
   <ul class="nav nav-tabs">
@@ -19,7 +18,7 @@
     <div class="dropdown-menu"> 
     <% if user_signed_in? %>
       <%= link_to "STUDIO3", room_path(@messages), method: :get, class: "btn btn-primary" %> 
-      <%= link_to "UNLIMITED(TIMER ONLY)", edit_room_path(@messages), class: "btn btn-primary" %>  
+      <%= link_to "UNLIMITED(TIMER ONLY)", no_limit_rooms_path(@messages), class: "btn btn-primary" %>  
       <%= link_to "LOGOUT", destroy_user_session_path, method: :delete, class: "btn btn-primary" %>
     <% else %>
       <%= link_to "LOGIN", new_user_session_path, class: "btn btn-primary" %> 

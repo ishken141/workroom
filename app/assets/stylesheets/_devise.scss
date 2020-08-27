@@ -1,55 +1,58 @@
-.gs {  
+.wrap {  
+  font-size: 100px;
+  width: 100%; 
+  height: 100vh; 
+  display: flex; 
+  align-items: start; 
+  justify-content: center;  
   color: #fff; 
-  margin-top: 30px;
+  
+  .inner {  
+      margin-top: 200px;
+    span { 
+      font-size: 60px; 
+      color: #fff;  
+      font-weight: bold;
+      animation: glitch 0.3s 0.3s steps(100);  
+      letter-spacing: .1em;
+   } 
+ }  
 }
 
-.text {  
-  opacity: 0; 
-  transform: translateY(10px);
-}
-.container { 
-    text-align: center; 
-    margin: 30px auto; 
+.text-center{ 
+    font-weight:  bold; 
 } 
 
-#timer { 
-    font-size: 36px; 
-    border: 1px solid #ccc; 
-    margin: 30px auto; 
-    padding: 50px; 
-    background-color: #000; 
-    color: #fff; 
-    border-radious: 3px; 
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .5); 
-} 
-
-.btn { 
-    width: 100%; 
-} 
-
-h1 {  
-} 
-
-body { 
-    background-image: url("/assets/work.jpg"); 
-} 
-
-#title { 
-    color: #fff;  
-    font-weight: bold; 
-    font-size: 90px; 
-    animation: title 0.3s 0.3s steps(100); 
-} 
-
-h2 { 
-    color: #fff; 
+.form-group {  
+    font-size: 25px;  
+    margin-top: 30px;
 }  
-#chat-input { 
-    border: 1px solid lightgrey; 
+
+.actions { 
+    text-aligh: center;
     
+} 
+
+
+#bbb { 
+    width: 150px;  
+    font-weight: bold; 
+    height: 50px; 
+    font-size: 20px; 
+    margin-top: 20px;
+} 
+
+.control { 
+    color: #fff;  
+    animation: title 0.3s 0.3s steps(100);
 }  
 
-@keyframes title { 
+.devise {  
+    animation: title 0.3s 0.3s steps(100); 
+    font-size: 40px;
+}
+
+@keyframes control devise { 
   @for $val from 0 through 100 { 
     @if $val <= 10 { 
       #{$val}% { 

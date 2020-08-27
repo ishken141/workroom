@@ -5,7 +5,7 @@ class RoomsController < ApplicationController
   def show
     @messages = Message.all
   end 
-  def edit  
+  def no_limit 
     @messages = Message.all
   end 
 end
