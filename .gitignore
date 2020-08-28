@@ -31,4 +31,6 @@
 /config/master.key 
 
 # Ignore bundler config.
-/.bundle
+/.bundle 
+
+BUNDLE_WITHOUT: "production"
