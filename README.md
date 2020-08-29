@@ -4,7 +4,7 @@ WORKROOM
 このアプリは筋トレモチベーション管理アプリです。
  
 # デモ
-[![Image from Gyazo](https://i.gyazo.com/4e97b3ee12a3613cbce4f49969759d02.gif)](https://gyazo.com/4e97b3ee12a3613cbce4f49969759d02)
+[![Image from Gyazo](https://i.gyazo.com/215063cfe58bdaf87aec11b45fc47f53.gif)](https://gyazo.com/215063cfe58bdaf87aec11b45fc47f53)
 # 特徴
  
 * トレーニングや筋トレをしている時に他のユーザーから応援のメッセージを貰いながらモチベーション維持が出来るアプリケーションです。
