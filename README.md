@@ -23,7 +23,7 @@ WORKROOM
  
 # インストール方法
 * git clone https://github.com/ishken141/workroom.git
-* cd /projects/workroom.3 
+* cd projects/workroom.3 
  
 # 作成情報
  
