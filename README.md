@@ -1,4 +1,4 @@
-# アプリ名　workroom
+# アプリ名　WORKROOM
 [![Image from Gyazo](https://i.gyazo.com/fe036159dd233ff64e2bf75f8051c91d.gif)](https://gyazo.com/fe036159dd233ff64e2bf75f8051c91d)
 
 このアプリは筋トレモチベーション管理アプリです。
